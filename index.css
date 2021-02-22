@@ -1,0 +1,223 @@
+/* Selecting font */
+body {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  max-width: 1248px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add a white background color to the top navigation */
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Style for logo in navigation bar */
+.topnav .logo {
+  float: left;
+  padding: 12.5px 16px;
+}
+
+/* Style for links in navigation bar */
+.topnav .link {
+  float: left;
+  color: #000000;
+  border-left: 0.25px solid #000000;
+  text-align: center;
+  padding: 14px 16px 11px;
+  border-bottom: solid 3px transparent;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Style for fake search in navigation bar */
+.topnav .search {
+  float: left;
+  color: #000000;
+  border-left: 0.25px solid #000000;
+  text-align: center;
+  padding: 12px 16px 10px;
+  font-size: 16px;
+}
+
+/* aligns "more" in top navigation bar with other links */
+.topsubnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* styles "more" in top navigation bar */
+.topsubnav .topsubnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px 11px;
+  background-color: inherit;
+  font-family: inherit;
+  /* margin: 0; */
+  /* border-left: 0.25px solid #000000; */
+  /* border-radius: 0; */
+}
+
+/* Change the color of links on hover */
+.topnav .link:hover,
+.topsubnav:hover .topsubnavbtn {
+  border-bottom: solid 3px #000000;
+}
+
+/* Hides the top subnav links */
+.topsubnav-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+/* Style the top subnav links */
+.topsubnav-content a {
+  float: right;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.topsubnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* Hovering over the "More" element shows the sub-nav */
+.topsubnav:hover .topsubnav-content {
+  display: block;
+}
+
+/* Styling second navigation bar */
+.secnav {
+  background-color: #bb1919;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.secnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 10px 11px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  border-bottom: solid 3px transparent;
+}
+
+/* Styles "NEWS" on secnav */
+.secnav h1 {
+  padding: 9px 15px 0px;
+  margin: 0px;
+  color: white;
+}
+
+/* Aligns "more" with links on secnav */
+.secsubnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Styles "more" on secnav */
+.secsubnav .secsubnavbtn {
+  font-size: 16px;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 14px 16px 11px;
+  background-color: inherit;
+  font-family: inherit;
+  /* margin: 0; */
+  /* border-bottom: 3px transparent; */
+  /* border-radius: 0; */
+}
+
+/* Change the color of links on hover */
+.secnav .link:hover,
+.secsubnav:hover .secsubnavbtn {
+  border-bottom: solid 3px white;
+}
+
+/* display = none removes element visually / Iain: removed position: absolute*/
+/* Johnny: readded position: absolute to avoid pushing contents down when "more" expanded*/
+.secsubnav-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+}
+
+/* Style the subnav links */
+.secsubnav-content a {
+  float: right;
+  text-decoration: none;
+}
+
+/* Add a black background color to 2nd "more" on hover */
+.secsubnavbtn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Hovering over the "More" element shows the sub-nav */
+.secsubnav:hover .secsubnav-content {
+  display: block;
+}
+
+/* Main articles styling general */
+.articles-main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Main articles box styling / box-sizing makes it take padding as part of width */
+.articles-main-box {
+  padding: 10px 8px;
+  width: 25%;
+  min-height: 200px;
+  box-sizing: border-box;
+}
+
+/* Gap between article boxes / here setting height = 100% means background fills space given above */
+.articles-main-inner {
+  background-color: green;
+  padding: 10px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  max-width: 1248px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: slategray;
+  padding: 14px 10px 11px;
+}
+  
+.footer{
+  color: white;
+  text-decoration: none;
+}
+
+.footer_div {
+  display:inline-block;
+  float:left;
+  padding-left: 10px;
+  padding-right: 16px;
+  border-right: 0.10px solid #000000;
+  
+  
+}
+
+.footer_list{
+  display:inline-block;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 16px;
+  text-decoration: none;
+}​
+
+
